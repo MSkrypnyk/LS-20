@@ -1,0 +1,27 @@
+<h3 class="title">Daily Tasks:</h3>
+<div class="tasks-list">
+  <div class="tasks-item" *ngFor="let document of tasks">
+    {{ document.title }}
+    <span>{{ document.number }}</span>
+  </div>
+</div>
+<div class="progress-title">
+  Your overall progress is <span>{{ progress.value }}</span>
+</div>
+<div class="progress-segment">
+  <span></span>
+</div>
+<div class="poll-list">
+  <div class="poll-item" *ngFor="let document of poll" [ngClass]="document.class">
+    <span class="material-icons"> {{ document.icons }} </span>
+    <div class="poll-info">
+      <h5 class="poll-title">{{ document.title }}</h5>
+      <p class="poll-desc">
+        {{ document.desc }}
+      </p>
+    </div>
+    <a routerLink="/"><span class="material-icons arrows">
+        {{ document.iconsArrow }}
+      </span></a>
+  </div>
+</div>

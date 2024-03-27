@@ -1,0 +1,124 @@
+@import "vars";
+
+.title {
+  font-weight: 300;
+  font-size: 24rem;
+  color: var(--c-title);
+  margin-top: 40rem;
+  margin-bottom: 15rem;
+}
+
+.tasks-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(98px, 1fr));
+  gap: 10rem;
+}
+.tasks-item {
+  padding: 12rem 12rem 8rem 12rem;
+  display: flex;
+  flex-direction: column;
+  gap: 18rem;
+  justify-content: space-between;
+  border-radius: 15rem;
+  background: #f6f5fb;
+  font-weight: 400;
+  font-size: 10rem;
+  color: #61598b;
+  &:nth-child(2) {
+    background: #fff4f4;
+    color: #ff3726;
+  }
+  &:nth-child(3) {
+    background: #f5f9f9;
+    color: #479696;
+  }
+  &:nth-child(2) span {
+    color: #ff5648;
+  }
+
+  &:nth-child(3) span {
+    color: #479696;
+  }
+
+  & span {
+    font-weight: 500;
+    font-size: 24rem;
+    color: #403572;
+  }
+}
+
+.progress-title {
+  margin-top: 15rem;
+  margin-bottom: 10rem;
+  font-weight: 300;
+  font-size: 18rem;
+  color: #595085;
+  & span {
+    font-weight: 400;
+    color: #c93f8d;
+  }
+}
+
+.progress-segment {
+  background: #fdf9fb;
+  border-radius: 5rem;
+  height: 8rem;
+  width: 100%;
+  position: relative;
+  margin-bottom: 40rem;
+  & span {
+    background: #c93f8d;
+    height: 4rem;
+    border-radius: inherit;
+    width: 60%;
+    top: 2rem;
+    left: 2rem;
+    position: absolute;
+  }
+}
+
+.poll-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10rem;
+  margin-bottom: 40rem;
+}
+.poll-item {
+  padding: 23rem 15rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 9rem;
+  background: #f6f5fb;
+  border-radius: 15rem;
+  &:nth-child(even) {
+    background: #fff4f4;
+  }
+}
+.poll-title {
+  font-weight: 400;
+  font-size: 16rem;
+  color: #403572;
+  margin-bottom: 10rem;
+  margin-top: 2rem;
+}
+.poll-desc {
+  font-weight: 400;
+  font-size: 12rem;
+  color: rgba(64, 53, 114, 0.5);
+}
+.material-icons {
+  color: #403572;
+}
+
+.arrows {
+  margin-top: 23rem;
+}
+
+.block-2 h5,
+.block-2 span {
+  color: #ff3726;
+}
+
+.block-2 p {
+  color: rgba(163, 122, 122, 0.7);
+}
